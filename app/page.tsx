@@ -13,13 +13,17 @@ export default function Home() {
   const InnerComponent = () => {
     return <h1>Inner</h1>;
   };
+  const CommonRouting = (nevigate: string) => {
+    router.push(nevigate)
+  }
+    
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1>{name}</h1>
       {/* <button onClick={()=> apple()}>Click</button>
       {InnerComponent()} */}
       <Link href="/login">Login</Link>
-      <button onClick={()=>router.push("/login")}>Login Page</button>
+      <button onClick={()=> CommonRouting("/login")}>Login Page</button>
     </main>
   );
 }
