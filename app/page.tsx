@@ -18,12 +18,12 @@ export default function Home() {
   }
     
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>{name}</h1>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 text-violet-400">
+      <h1>Home Page{name}</h1>
       {/* <button onClick={()=> apple()}>Click</button>
       {InnerComponent()} */}
       <Link href="/login">Login</Link>
-      <button onClick={()=> CommonRouting("/login")}>Login Page</button>
+      {/* <button onClick={()=> CommonRouting("/login")}>Login Page</button> */}
     </main>
   );
 }
